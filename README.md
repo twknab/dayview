@@ -2,6 +2,10 @@
 
 ![peek-graphql-ember](https://gist.github.com/MartinBeuriot/6e208cd6645066547de9c7b96b9fad86/raw/fb812b50edc8b4d6a8644b1956239672a373175a/fs-challenge.png)
 
+## Additions by TK
+- Added [FullCalendar](https://fullcalendar.io/) to Ember app via yarn
+  - Utilize DayView to populate events
+
 At Peek, we build software for tour and activity operators to run their businesses. One essential feature to almost all of our operators on PeekPro is the back office calendar where they can go to schedule activities, view rental bookings and see how many of their guests are arriving in a given day, week, or month.
 
 On our frontend team, we love EmberJs. On the backend we love Elixir, we are also big fans of GraphQL. We like the benefits it provides over a classical REST API, including the strong typing, the flexibility for the client to request exactly what they need, and the automatic documentation.
