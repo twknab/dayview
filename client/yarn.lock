@@ -1256,6 +1256,22 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
+"@fullcalendar/common@~5.10.1":
+  version "5.10.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/common/-/common-5.10.1.tgz#a019951743852277a4095e536fd7716f6f85b9aa"
+  integrity sha512-EumKIJcQTvQdTs75/9dmeREFgjcRVWzqHJS1Xvlz5mNsmB+w9EINCHETRjChtAQg1WD/lTQyVj4sHsKO7vCMSw==
+  dependencies:
+    tslib "^2.1.0"
+
+"@fullcalendar/core@^5.10.1":
+  version "5.10.1"
+  resolved "https://registry.yarnpkg.com/@fullcalendar/core/-/core-5.10.1.tgz#05c7653e5004149a63bcb03e9dc8b049186ca50b"
+  integrity sha512-8sVuC6ywXV+cxqsqTZaR1hgUqeyjVed20NyZ7lGW9AY0kma1GIEwLgqPS5Q6uVhHyin68lmgecKfJCwhxENE8w==
+  dependencies:
+    "@fullcalendar/common" "~5.10.1"
+    preact "^10.0.5"
+    tslib "^2.1.0"
+
 "@glimmer/component@^1.0.4":
   version "1.0.4"
   resolved "https://registry.npmjs.org/@glimmer/component/-/component-1.0.4.tgz"
@@ -9121,6 +9137,11 @@ posix-character-classes@^0.1.0:
   version "0.1.1"
   resolved "https://registry.npmjs.org/posix-character-classes/-/posix-character-classes-0.1.1.tgz"
   integrity sha1-AerA/jta9xoqbAL+q7jB/vfgDqs=
+
+preact@^10.0.5:
+  version "10.6.6"
+  resolved "https://registry.yarnpkg.com/preact/-/preact-10.6.6.tgz#f1899bc8dab7c0788b858481532cb3b5d764a520"
+  integrity sha512-dgxpTFV2vs4vizwKohYKkk7g7rmp1wOOcfd4Tz3IB3Wi+ivZzsn/SpeKJhRENSE+n8sUfsAl4S3HiCVT923ABw==
 
 prelude-ls@^1.2.1:
   version "1.2.1"
