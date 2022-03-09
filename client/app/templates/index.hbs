@@ -1,0 +1,11 @@
+{{page-title 'Home'}}
+<div>
+  <h1>
+    Peek 👀<br />Reservations<br />
+  </h1>
+  <CalendarPicker/>
+  {{#each @model as |item|}}
+  {{item.id}}-{{item.title}}-{{item.start}}<br />
+  {{/each}}
+</div>
+{{outlet}}
