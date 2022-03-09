@@ -2,6 +2,8 @@ import Application from '@ember/application'
 import Resolver from 'ember-resolver'
 import loadInitializers from 'ember-load-initializers'
 import config from 'peek-client/config/environment'
+// TODO: Import Full calendar via npm package
+// import { Calendar } from '@fullcalendar/core'
 
 export default class App extends Application {
   modulePrefix = config.modulePrefix
