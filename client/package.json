@@ -32,7 +32,7 @@
     "bootstrap": "^5.0.0",
     "broccoli-asset-rev": "^3.0.0",
     "ember-apollo-client": "^3.2.0",
-    "ember-auto-import": "^1.11.3",
+    "ember-auto-import": "^2.4.0",
     "ember-cli": "~3.28.3",
     "ember-cli-app-version": "^5.0.0",
     "ember-cli-babel": "^7.26.6",
@@ -76,6 +76,9 @@
   },
   "dependencies": {
     "@fullcalendar/core": "^5.10.1",
-    "@fullcalendar/daygrid": "^5.10.1"
+    "@fullcalendar/daygrid": "^5.10.1",
+    "@fullcalendar/timegrid": "^5.10.1",
+    "ember-modifier": "^3.1.0",
+    "webpack": "^5.70.0"
   }
 }
