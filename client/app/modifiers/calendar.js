@@ -7,7 +7,7 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 export default modifier((element, [eventData]) => {
   let calendar = new Calendar(element, {
     plugins: [dayGridPlugin, timeGridPlugin],
-    initialView: 'dayGridMonth',
+    initialView: 'timeGridDay',
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
