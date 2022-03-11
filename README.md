@@ -3,8 +3,18 @@
 ![peek-graphql-ember](https://gist.github.com/MartinBeuriot/6e208cd6645066547de9c7b96b9fad86/raw/fb812b50edc8b4d6a8644b1956239672a373175a/fs-challenge.png)
 
 ## Additions by TK
+
 - Added [FullCalendar](https://fullcalendar.io/) to Ember app via yarn
   - Utilize DayView to populate events
+  - Detects event click events
+- This took a fair bit to understand how to incorporate in comparison to other frameworks (React, Vue etc) -- was able to use a modifier to display the calendar when invoked, passing in event data
+
+## TK TODOs
+
+- Clicking event triggers modal with details and button to "book"
+- Booked events have a unique color or appearance 
+- Clicking book triggers grapqhl mutation to run mutation
+- Local timezone conversion
 
 At Peek, we build software for tour and activity operators to run their businesses. One essential feature to almost all of our operators on PeekPro is the back office calendar where they can go to schedule activities, view rental bookings and see how many of their guests are arriving in a given day, week, or month.
 

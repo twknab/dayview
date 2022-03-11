@@ -23,8 +23,6 @@ export default modifier((element, [eventData]) => {
 
   calendar.render();
 
-
-
   return () => {
     // if the calendar has a teardown function, you'd want to call that here
   };
