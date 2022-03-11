@@ -13,11 +13,11 @@ export default modifier((element, [eventData]) => {
     headerToolbar: {
       left: 'prev,next today',
       center: 'title',
-      right: 'dayGridMonth,timeGridWeek,listWeek',
+      right: 'dayGridMonth,timeGridWeek,timeGridDay',
     },
     events: eventData ? eventData : [],
   });
-  
+
   calendar.render();
 
   return () => {
