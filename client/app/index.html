@@ -14,45 +14,13 @@
       rel="stylesheet"
       href="{{rootURL}}assets/peek-client.css"
     />
-    <!-- TODO: Replace with npm/yarn package initiated within app config -->
-    <!-- <link
-      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.css"
-      rel="stylesheet"
-    /> -->
 
     {{content-for "head-footer"}}
   </head>
   <body>
     {{content-for "body"}}
-    <!-- <div id="calendar"></div> -->
     <script src="{{rootURL}}assets/vendor.js"></script>
     <script src="{{rootURL}}assets/peek-client.js"></script>
-    <!-- TODO: Replace with npm/yarn package initiated within app config -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.2/main.min.js"></script> -->
-    <!-- <script>
-      document.addEventListener('DOMContentLoaded', function () {
-        var calendarEl = document.getElementById('calendar');
-        // TODO: fetch events
-        
-        var calendar = new FullCalendar.Calendar(calendarEl, {
-          initialView: 'dayGridMonth',
-              headerToolbar: {
-              left: 'prev,next today',
-              center: 'title',
-              right: 'dayGridMonth,timeGridWeek,timeGridDay'
-              },
-          events: [
-            {
-              title: 'Kayak Tour',
-              start: '2022-03-09T14:30:00',
-              end: '2022-03-09T19:30:00',
-            },
-          ],
-        });
-
-        calendar.render();
-      });
-    </script> -->
     {{content-for "body-footer"}}
   </body>
 </html>

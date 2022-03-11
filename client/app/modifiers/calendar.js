@@ -4,7 +4,9 @@ import { Calendar } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
 
-export default modifier((element, eventData) => {
+export default modifier((element, [eventData]) => {
+  console.log("THIS IS EVENT DATA");
+  console.log(eventData);
   let calendar = new Calendar(element, {
     plugins: [dayGridPlugin, timeGridPlugin],
     initialView: 'dayGridMonth',
@@ -13,33 +15,9 @@ export default modifier((element, eventData) => {
       center: 'title',
       right: 'dayGridMonth,timeGridWeek,listWeek',
     },
-    events: [
-      {
-        title: 'Kayak Tour',
-        start: '2022-03-09T14:30:00',
-        end: '2022-03-09T19:30:00',
-      },
-    ],
+    events: eventData ? eventData : [],
   });
-
-  // let calendar = new Calendar(element, {
-  //   initialView: 'dayGridMonth',
-  //   ...overrideOptions,
-  //   headerToolbar: {
-  //     left: 'prev,next today',
-  //     center: 'title',
-  //     right: 'dayGridMonth,timeGridWeek,timeGridDay',
-  //     ...(overrideOptions.headerToolbar || {})
-  //   },
-  //   events: overrideOptions.events
-  //     ? overrideOptions.events
-  //     : [{
-  //         title: 'Kayak Tour',
-  //         start: '2022-03-09T14:30:00',
-  //         end: '2022-03-09T19:30:00',
-  //       }],
-  // });
-
+  
   calendar.render();
 
   return () => {
